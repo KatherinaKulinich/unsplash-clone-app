@@ -9,7 +9,7 @@
     <title>Unsplash Clone App</title>
 <script defer="defer" src="main.js"></script><script defer="defer" src="button.js"></script><link href="main.css" rel="stylesheet"></head>
 <body class="body">
-    
+
     <header class="body__header">
         <div class="wrapper">
             <div class="header">
@@ -19,11 +19,13 @@
                         find a new screensaver photo
                     </h1>
                 </div>
-                <form action="#" method="get" name="searchForm" class="header__form form">
+                <form action="#" method="get" name="searchForm" id="form" class="header__form form">
                     <label for="searchTopic"></label>
-                    <input type="text" id="searchTopic" name="searchTopic" class="form__input" placeholder="look for...">
-                    <button type="submit" class="form__button" id="searchButton">
-                        Let's start
+                    <input type="text" id="searchTopic" name="searchTopic" class="form__input" placeholder="look for..." autocomplete="off">
+                    <button type="submit" class="form__button button" id="searchButton" data-glow>
+                        <p class="button__text">
+                            Let's start
+                        </p>
                     </button>
                 </form>
             </div>

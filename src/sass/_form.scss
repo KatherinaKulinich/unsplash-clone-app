@@ -1,0 +1,39 @@
+.form {
+
+    &__input {
+        width: calc(50% - 10px);
+        height: 50px;
+        padding: 10px 20px;
+
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, .6);
+        caret-color: #D98719 ;
+        outline: none;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 12px;
+        line-height: 15px;
+       
+        &:hover {
+            border-color: #D98719 ;
+        }
+    }
+
+    &__button {
+        width: calc(50% - 10px);
+        height: 50px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .form {
+        &__input, 
+        &__button {
+            width: 100%;
+        }
+    }
+}

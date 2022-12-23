@@ -1,4 +1,199 @@
 /*!*************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./sass/styles.scss ***!
   \*************************************************************************************************************/
+@font-face {
+  font-family: 'Poppins';
+  src: url(font/Poppins-Light.woff2) format("woff2"), url(font/Poppins-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(font/Poppins-Bold.woff2) format("woff2"), url(font/Poppins-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(font/Poppins-Regular.woff2) format("woff2"), url(font/Poppins-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+* {
+  box-sizing: border-box; }
+
+.body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #D3C4B6; }
+  .body__header {
+    background-color: #292826;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.wrapper {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+@media (min-width: 1024px) {
+  .wrapper {
+    margin-left: 30px;
+    margin-right: 30px; } }
+
+@media (min-width: 1240px) {
+  .wrapper {
+    margin-left: 60px;
+    margin-right: 60px; } }
+
+@media (min-width: 1440px) {
+  .wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.header {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+  .header__title {
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 23px;
+    line-height: 26px; }
+  .header__app-name, .header__form {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between; }
+  .header__form {
+    width: 100%; }
+  .header__form label {
+    display: none; }
+
+@media (min-width: 768px) {
+  .header {
+    padding: 30px 0; }
+    .header__app-name {
+      justify-content: start;
+      gap: 30px; }
+    .header__title {
+      font-size: 27px;
+      line-height: 30px;
+      max-width: 300px; } }
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 40px 0;
+    flex-direction: row;
+    justify-content: space-between; }
+    .header__form {
+      width: 30%;
+      flex-direction: column; }
+    .header__app-name {
+      width: 30%; } }
+
+.form__input {
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  caret-color: #D98719;
+  outline: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 15px; }
+  .form__input:hover {
+    border-color: #D98719; }
+
+.form__button {
+  width: calc(50% - 10px);
+  height: 50px; }
+
+@media (min-width: 1024px) {
+  .form__input, .form__button {
+    width: 100%; } }
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px; }
+  .container:hover .container__image:not(:hover) {
+    box-shadow: none; }
+  .container__image {
+    width: 380px;
+    height: 214px;
+    box-shadow: 6px 6px 30px 0px #393836;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .container__image:hover {
+      box-shadow: 6px 6px 15px 0px #361702; }
+  .container__error {
+    color: #7A200B;
+    text-transform: uppercase;
+    font-style: 20px;
+    line-height: 24px; }
+
+.button {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 15px #1D1A17;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    z-index: 10; }
+  .button__text {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 19px;
+    z-index: 10;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .button__glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 0 50%; }
+  .button__color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(26deg, #00becc 13%, #2bff00 40%, #fbff00 55%, #ffae00 75%, #ef1901 100%); }
 

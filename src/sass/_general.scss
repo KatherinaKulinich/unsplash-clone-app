@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #D3C4B6 ;
+
+    &__header {
+        background-color: #292826 ;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+}
+
+
+.wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .wrapper {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

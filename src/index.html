@@ -9,7 +9,7 @@
     <title>Unsplash Clone App</title>
 </head>
 <body class="body">
-    
+
     <header class="body__header">
         <div class="wrapper">
             <div class="header">
@@ -29,6 +29,7 @@
                     action="#" 
                     method="get" 
                     name="searchForm" 
+                    id="form"
                     class="header__form form"
                 >
                     <label for="searchTopic"></label>
@@ -38,13 +39,17 @@
                         name="searchTopic" 
                         class="form__input"
                         placeholder="look for..."
+                        autocomplete="off"
                     >
                     <button 
                         type="submit" 
-                        class="form__button" 
+                        class="form__button button" 
                         id="searchButton"
+                        data-glow
                     >
-                        Let's start
+                        <p class="button__text">
+                            Let's start
+                        </p>
                     </button>
                 </form>
             </div>
