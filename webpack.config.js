@@ -38,7 +38,7 @@ module.exports = {
         button: './js/button.js'                    
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: filename('js')
     },
     resolve: {
