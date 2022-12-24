@@ -33,6 +33,14 @@
   .body__header {
     background-color: #292826;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .body__slider {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(90, 90, 90, 0.7);
+    z-index: 20; }
 
 .wrapper {
   margin-left: 10px;
@@ -196,4 +204,78 @@
     top: 0;
     left: 0;
     background: linear-gradient(26deg, #00becc 13%, #2bff00 40%, #fbff00 55%, #ffae00 75%, #ef1901 100%); }
+
+.slider__box {
+  width: 85%;
+  height: 85%;
+  background-color: #F1E7DD;
+  z-index: 30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.slider__button {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent; }
+  .slider__button:hover {
+    background-color: rgba(90, 90, 90, 0.1); }
+  .slider__button:active {
+    background-color: rgba(90, 90, 90, 0.3); }
+  .slider__button--prev {
+    background-image: url(img/arrow-prev.svg);
+    left: 50px; }
+  .slider__button--next {
+    background-image: url(img/arrow-next.svg);
+    right: 50px; }
+
+.slider__button-cross {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(img/cross.svg);
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  top: -50px;
+  right: 0; }
+
+.slider__content {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+@media (min-width: 768px) {
+  .slider__content {
+    width: 600px;
+    height: 800px; } }
+
+@media (min-width: 1024px) {
+  .slider__content {
+    width: 800px;
+    height: 1000px; } }
+
+@media (min-width: 1240px) {
+  .slider__box {
+    width: 75%;
+    height: 85%; }
+  .slider__content {
+    width: 1000px;
+    height: 700px; } }
 
