@@ -20,7 +20,7 @@
 <h4>🟡 UnsplashAPI </h5>
 <p>The app uses the <a href='https://unsplash.com/developers'>UnsplashAPI</a> , providing you with a treasure trove of high-quality, royalty-free images from talented photographers around the world. </p>
 <h4>🟡 Zoom for a Closer Look </h5>
-<p>Dive deeper into the details with SnapFind's intuitive zoom feature.  </p>
+<p>Dive deeper into the details with zoom feature.  </p>
 <h4>🟡 Effortless Image Saving </h5>
 <p>Double-click on any image, and it opens in a new tab where you can save it.</p>
 
